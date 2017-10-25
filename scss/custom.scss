@@ -9,45 +9,46 @@
 
  /*Typography*/
 h1{
-  font-family: Oswald;
-  font-weight: 100;
-  font-size: 3em;
+  font-family: $header-font;
+  font-weight: $font-weight-light;
+  font-size: $header-size;
 }
 
 h2{
-  font-family: Lobster;
-  font-size: 1.2em;
-  font-weight: 100;
+  font-family: $sub-header-font;
+  font-size: $sub-header-size;
+  font-weight: $font-weight-light;
 }
 
 h3{
-  font-family: Oswald;
-  font-weight: normal;
-  font-size: 1.5em;
-  text-decoration: overline;
+  font-family: $section-title-font;
+  font-weight: $font-weight-regular;
+  font-size: $section-title-size;
+  text-decoration: $section-title-decoration;
 
 }
 
 h4{
-  font-family: Oswald;
-  font-weight: normal;
-  font-size: 1.3em;
-  text-decoration: overline ;
+  font-family: $section-title-font;
+  font-weight: $font-weight-regular;
+  font-size: $sub-section-title-size;
+  text-decoration: $section-title-decoration ;
 }
 
 p {
-  font-family: assistant;
-  font-size: 14px;
+  font-family: $paragraph-font;
+  font-weight: $font-weight-bold;
+  font-size: $paragraph-size;
+}
+
+nav{
+  font-family: $nav-font;
+  font-weight: $font-weight-regular;
+  text-align: left;
 }
 
 //Navigation SASS
 
-
-nav{
-  font-family:assistant;
-  font-weight: 300;
-
-}
 // Outer navigation wrapper
 .navigation {
   height: $nav-height;
@@ -91,7 +92,7 @@ nav {
     li {
       float: left;
       position: relative;
-      padding: 0 120px 0 0;
+      padding: 0 0 0 0;
       a,
       a:visited {
         display: block;
@@ -101,8 +102,8 @@ nav {
         color: $nav-font-color;
         text-decoration: none;
         &:hover {
-          color: $link-hover-color;
-          font-weight: bold;
+          //color: ;
+          //font-weight: 400;
 
 
         }
@@ -149,14 +150,14 @@ nav {
   }
   nav {
    width: 100%;
-    padding: $nav-height 0 15px;
+    padding: 50px 0 15px;
     ul {
       display: none;
       li {
         float: none;
         a {
           padding: 15px;
-          line-height: 20px;
+          line-height: 15px;
         }
         ul li a {
           padding-left: 30px;
@@ -190,7 +191,7 @@ nav {
     position: absolute;
     display: block;
     content: '';
-    transition: all 300ms ease-in-out;
+    transition: all 200ms ease-in-out;
   }
   span:before {
     top: -10px;
@@ -214,6 +215,7 @@ nav {
 }
 
 
+
 /*Mobile Screen*/
 html{
   background: white;
@@ -222,17 +224,17 @@ html{
 body{
     margin: 0 0 0 0;
     width: 100%;
-    text-align: center;
-}
+    text-align: $mobile-align;
+    }
 
 
 
 /*----------Home--------*/
 #header {
   padding: 150px 0 150px 0;
-  text-align: center;
   height: 300px;
   border: 1px solid black;
+  background: url
 
 }
 
@@ -241,7 +243,6 @@ body{
 
 #services {
   padding: 30px 20px 0 20px;
-  text-align: center;
   height: 1175px;
   border: 1px solid black;
 }
@@ -250,7 +251,6 @@ body{
 
 #testimonials{
   padding: 0;
-  text-align: center;
   border: 1px solid black;
   height: 400px;
 }

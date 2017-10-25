@@ -4,10 +4,45 @@ $off-white: #feffff;
 // Override bootstrap default
 $body-bg: $off-white;
 
+//Typography Weight
+
+$font-weight-light:	100;
+$font-weight-regular:	300;
+$font-weight-bold:	400;
+
+//Typography Font-Family
+
+$nav-font: Oswald;
+$header-font: Oswald;
+$sub-header-font: Lobster;
+$section-title-font: Oswald;
+$paragraph-font: assistant;
+
+//Typography Font-Size
+$header-size: 3em;
+$sub-header-size: 1.2em;
+$section-title-size: 1.5em;
+$sub-section-title-size: 1.2em;
+$paragraph-size: 0.8em;
+
+//Text-decoration
+
+$section-title-decoration: overline;
+
+//Typography Alignement
+
+$mobile-align: center;
+$desktop-align: left;
+
+
 //Navigation Variables
+
 $content-width: 1000px;
 $breakpoint: 700px;
 $nav-height: 70px;
 $nav-background: white;
 $nav-font-color: black;
 $link-hover-color: #2581DC;
+
+//Images
+$header-background: url("paper.gif")

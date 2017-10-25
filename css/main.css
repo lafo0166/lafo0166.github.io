@@ -20,7 +20,7 @@ h2 {
 
 h3 {
   font-family: Oswald;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.5em;
   text-decoration: overline; }
 
@@ -47,15 +47,17 @@ nav {
   top: 0;
   width: 100%; }
 
-.brand {
+.social-media-nav i {
+  padding: 0 5px 0 5px; }
+
+.social-media-nav {
   position: absolute;
   padding-left: 20px;
   float: left;
   line-height: 70px;
-  text-transform: uppercase;
-  font-size: 1.4em; }
-  .brand a,
-  .brand a:visited {
+  font-size: 1.2em; }
+  .social-media-nav a,
+  .social-media-nav a:visited {
     color: black;
     text-decoration: none; }
 
@@ -111,7 +113,7 @@ nav {
     display: block; }
   nav {
     width: 100%;
-    padding: 50px 0 15px; }
+    padding: 70px 0 15px; }
     nav ul {
       display: none; }
       nav ul li {
@@ -130,7 +132,7 @@ nav {
 
 #nav-toggle {
   position: absolute;
-  left: 18px;
+  right: 5px;
   top: 22px;
   cursor: pointer;
   padding: 10px 35px 16px 0px; }
@@ -138,9 +140,9 @@ nav {
   #nav-toggle span:before,
   #nav-toggle span:after {
     cursor: pointer;
-    border-radius: 1px;
-    height: 5px;
-    width: 35px;
+    border-radius: 3px;
+    height: 4px;
+    width: 25px;
     background: black;
     position: absolute;
     display: block;
@@ -171,9 +173,15 @@ body {
 /*----------Home--------*/
 #header {
   padding: 150px 0 150px 0;
-  height: 300px;
+  height: 508px;
   border: 1px solid black;
   background: url; }
+
+/*--------------Services--------------*/
+#about {
+  padding: 30px 20px 0 20px;
+  height: 1175px;
+  border: 1px solid black; }
 
 /*--------------Services--------------*/
 #services {
@@ -183,9 +191,14 @@ body {
 
 /*--------------Testimonials--------------*/
 #testimonials {
-  padding: 0;
+  padding: 30px 20px 0 20px;
   border: 1px solid black;
-  height: 400px; }
+  height: 508px; }
+
+/*--------------Footer--------------*/
+.social-media-footer i {
+  font-size: 1.2em;
+  padding: 0 5px 0 5px; }
 
 /*!
  * Bootstrap v4.0.0-beta (https://getbootstrap.com)

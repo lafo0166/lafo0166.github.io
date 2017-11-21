@@ -21,19 +21,19 @@ h2 {
 h3 {
   font-family: Oswald;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-decoration: overline; }
 
 h4 {
   font-family: Oswald;
   font-weight: 400;
-  font-size: 1.2em;
-  text-decoration: overline; }
+  font-size: 0.8em;
+  letter-spacing: 0.1em; }
 
 p {
   font-family: assistant;
   font-weight: 400;
-  font-size: 0.8em; }
+  font-size: 0.9em; }
 
 nav {
   font-family: Oswald;
@@ -173,32 +173,122 @@ body {
 /*----------Home--------*/
 #header {
   padding: 150px 0 150px 0;
-  height: 508px;
-  border: 1px solid black;
-  background-image: url("images/header-banner-small.jpg"); }
+  /*border: 1px solid black;*/
+  background-image: url("images/header-banner-small.jpg");
+  background-repeat: no-repeat;
+  color: white; }
 
-/*--------------Services--------------*/
+/*--------------About--------------*/
 #about {
-  padding: 30px 20px 0 20px;
-  height: 1175px;
-  border: 1px solid black; }
+  padding: 30px 25px 0 25px;
+  /*border: 1px solid black;*/
+  line-height: 1.5; }
+
+/*------------Education----------*/
+#certification {
+  padding-top: 30px; }
+  #certification ul {
+    padding: 15px 25px 0 25px;
+    margin-left: 15px; }
+  #certification li {
+    font-family: assistant;
+    font-size: 0.9em;
+    text-align: left; }
 
 /*--------------Services--------------*/
 #services {
   padding: 30px 20px 0 20px;
-  height: 1175px;
-  border: 1px solid black; }
+  /*border: 1px solid black;*/ }
 
 /*--------------Testimonials--------------*/
 #testimonials {
   padding: 30px 20px 0 20px;
-  border: 1px solid black;
-  height: 508px; }
+  border: 1px solid black; }
+
+/*--------------Contact--------------*/
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto; }
+
+form input, form textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  /*-moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;*/
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: assistant;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none; }
+
+form input:focus, form textarea:focus {
+  -moz-box-shadow: 0 0px 2px #e74c3c !important;
+  -webkit-box-shadow: 0 0px 2px #e74c3c !important;
+  box-shadow: 0 0px 2px #e74c3c !important; }
+
+form #input-submit {
+  color: white;
+  background: #e74c3c;
+  cursor: pointer; }
+
+form #input-submit:hover {
+  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6); }
+
+form textarea {
+  height: 126px; }
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em; }
+
+.right {
+  width: 50%; }
+
+.left {
+  margin-right: 2%; }
+
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0; } }
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
 
 /*--------------Footer--------------*/
 .social-media-footer i {
   font-size: 1.2em;
   padding: 0 5px 0 5px; }
+
+.social-media-footer a,
+.social-media-footer a:visited {
+  color: black;
+  text-decoration: none; }
 
 /*!
  * Bootstrap v4.0.0-beta (https://getbootstrap.com)

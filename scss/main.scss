@@ -2,37 +2,401 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 
-body {
-  padding: 2rem 0;
+/*Typography*/
+h1{
+ font-family: $header-font;
+ font-weight: $font-weight-light;
+ font-size: $header-size;
 }
+
+h2{
+ font-family: $sub-header-font;
+ font-size: $sub-header-size;
+ font-weight: $font-weight-light;
+}
+
+h3{
+ font-family: $section-title-font;
+ font-weight: $font-weight-bold;
+ font-size: $section-title-size;
+ text-decoration: $section-title-decoration;
+
+}
+
+h4{
+ font-family: $section-title-font;
+ font-weight: $font-weight-bold;
+ font-size: $sub-section-title-size;
+ letter-spacing: 0.1em;
+ }
+
+p {
+ font-family: $paragraph-font;
+ font-weight: $font-weight-bold;
+ font-size: $paragraph-size;
+}
+
+nav{
+ font-family: $nav-font;
+ font-weight: $font-weight-regular;
+ text-align: left;
+}
+
+
+//Navigation SASS
+
+// Outer navigation wrapper
+.navigation {
+  height: $nav-height;
+  background: $nav-background;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+// Logo and branding
+.social-media-nav i{
+  padding: 0 5px 0 5px;
+}
+.social-media-nav {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: $nav-height;
+  font-size: $social-media-icon;
+  a,
+  a:visited {
+    color: $nav-font-color;
+    text-decoration: none;
+  }
+}
+
+// Container with no padding for navbar
+.nav-container {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+// Navigation
+nav {
+  float: right;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      position: relative;
+      padding: 0 0 0 0;
+      a,
+      a:visited {
+        display: block;
+        padding: 0 20px;
+        line-height: $nav-height;
+        background: $nav-background;
+        color: $nav-font-color;
+        text-decoration: none;
+        &:hover {
+          //color: ;
+          //font-weight: 400;
+
+
+        }
+        &:not(:only-child):after {
+          padding-left: 7px;
+          content: ' ▾';
+        }
+      } // Dropdown list
+      ul li {
+        min-width: 190px;
+        a {
+          padding: 15px;
+          line-height: 20px;
+
+        }
+      }
+    }
+  }
+}
+
+// Dropdown list binds to JS toggle event
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  }
+
+/* Mobile navigation */
+
+// Binds to JS Toggle
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $nav-background;
+  height: $nav-height;
+  width: $nav-height;
+}
+@media only screen and (max-width: $breakpoint) {
+  // Hamburger nav visible on mobile only
+  .nav-mobile {
+    display: block;
+  }
+  nav {
+   width: 100%;
+    padding: 70px 0 15px;
+    ul {
+      display: none;
+      li {
+        float: none;
+        a {
+          padding: 15px;
+          line-height: 15px;
+        }
+        ul li a {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: $breakpoint) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  right: 5px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  span,
+  span:before,
+  span:after {
+    cursor: pointer;
+    border-radius: 3px;
+    height: 4px;
+    width: 25px;
+    background: $nav-font-color;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 200ms ease-in-out;
+  }
+  span:before {
+    top: -10px;
+  }
+  span:after {
+    bottom: -10px;
+  }
+  &.active span {
+    background-color: transparent;
+    &:before,
+    &:after {
+      top: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+
+
+/*Mobile Screen*/
+html{
+  background: white;
+}
+
+body{
+    margin: 0 0 0 0;
+    width: 100%;
+    text-align: $mobile-align;
+    }
+
+
+
+/*----------Home--------*/
+#header {
+  padding: 150px 0 150px 0;
+  height: 508px;
+  /*border: 1px solid black;*/
+  background-image: $header-background-mobile;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/*--------------About--------------*/
+
+#about {
+  padding: 30px 25px 0 25px;
+  /*border: 1px solid black;*/
+  line-height: 1.5;
+}
+/*------------Education----------*/
+#certification{
+  padding-top: 30px;
+
+  ul{ padding: 15px 25px 0 25px;
+  margin-left: 15px; }
+
+  li{
+    font-family: $paragraph-font;
+    font-size: $paragraph-size;
+    text-align: left;
+    }
+}
+/*--------------Services--------------*/
+
+#services {
+  padding: 30px 20px 0 20px;
+    /*border: 1px solid black;*/
+
+}
+
+/*--------------Testimonials--------------*/
+
+#testimonials{
+padding: 30px 20px 0 20px;
+  border: 1px solid black;
+    }
+
+
+
+
+/*--------------Contact--------------*/
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+}
+form input, form textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  /*-moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;*/
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: $paragraph-font;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+form input:focus, form textarea:focus {
+  -moz-box-shadow: 0 0px 2px #e74c3c !important;
+  -webkit-box-shadow: 0 0px 2px #e74c3c !important;
+  box-shadow: 0 0px 2px #e74c3c !important;
+}
+form #input-submit {
+  color: $grey;
+  font-weight: bold;
+  background: $yellow;
+  cursor: pointer;
+}
+form #input-submit:hover {
+  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  opacity: .9;
+}
+form textarea {
+  height: 126px;
+}
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 2%;
+}
+
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}
+/* Clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/*--------------Footer--------------*/
+.social-media-footer i{
+  font-size: $social-media-icon;
+  color: black;
+  padding: 0 5px 0 5px;
+}
+
+.social-media-footer{
+  a,
+  a:visited {
+    color: $nav-font-color;
+    text-decoration: none;
+  }
+}
+
+// INFORMATION INCLUDED WITH FILE + RESPONSIVE
+
+//body {
+//  padding: 2rem 0;
+//}
 
 // Responsive typography sizes using Bootstrap mixins for the media querries
-html {
-  font-size: 14px;
-}
+//html {
+//  font-size: 14px;
+//}
 
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 16px;
-  }
-}
+//@include media-breakpoint-up(sm) {
+//  html {
+//    font-size: 16px;
+//  }
+//}
 
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 20px;
-  }
-}
+//@include media-breakpoint-up(md) {
+//  html {
+//    font-size: 20px;
+//  }
+//}
 
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 28px;
-  }
-}
-
-.header-subtle {
-  @extend .text-warning;
-  @extend .text-uppercase;
-  font-size: 1.2rem;
-  letter-spacing: .12em;
-  opacity: .6;
-}
+//@include media-breakpoint-up(lg) {
+//  html {
+//    font-size: 28px;
+//  }
+//}

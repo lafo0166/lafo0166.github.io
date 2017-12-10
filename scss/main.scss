@@ -227,25 +227,37 @@ body{
 
 /*----------Home--------*/
 #header {
-  padding: 150px 0 150px 0;
-  height: 508px;
-  /*border: 1px solid black;*/
-  background-image: $header-background-mobile;
+  padding-top: 50vh;
+height: 100vh;
+      /*border: 1px solid black;*/
+    //  background-color: $navy-blue;
+background-image: $header-background-mobile;
+  background: cover;
   background-repeat: no-repeat;
   color: white;
-}
+    }
+
 
 /*--------------About--------------*/
 
 #about {
-  padding: 30px 25px 0 25px;
+  padding: 70px 25px 0 25px;
   /*border: 1px solid black;*/
   line-height: 1.5;
 }
 /*------------Education----------*/
-#certification{
-  padding-top: 30px;
+.certification-intro{
+//height: 300px;
+overflow: hidden;
+}
+.certification-intro img{
+width: 100%;
 
+}
+
+#certification{
+  padding-top: 70px;
+h3{margin-bottom: 35px;}
   ul{ padding: 15px 25px 0 25px;
   margin-left: 15px; }
 
@@ -257,8 +269,18 @@ body{
 }
 /*--------------Services--------------*/
 
+.services-intro img{
+  width: 100%;  }
+
 #services {
-  padding: 30px 20px 0 20px;
+  padding: 40px 20px 0 20px;
+  img{margin-bottom: 15px}
+
+  .services-intro{
+      background-size: cover;
+      //height: 300px;
+      overflow: hidden;}
+        }
     /*border: 1px solid black;*/
 
 }
@@ -274,6 +296,10 @@ padding: 30px 20px 0 20px;
 
 
 /*--------------Contact--------------*/
+
+#contact{
+  margin-top: 40px;
+}
 *,
 *:before,
 *:after {
@@ -282,7 +308,7 @@ padding: 30px 20px 0 20px;
   box-sizing: border-box;
 }
 form {
-  max-width: 600px;
+  max-width: 500px;
   text-align: center;
   margin: 20px auto;
 }
@@ -290,6 +316,7 @@ form input, form textarea {
   border: 0;
   outline: 0;
   padding: 1em;
+  font-size: $paragraph-size;
   /*-moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;*/
@@ -303,9 +330,9 @@ form input, form textarea {
   resize: none;
 }
 form input:focus, form textarea:focus {
-  -moz-box-shadow: 0 0px 2px #e74c3c !important;
-  -webkit-box-shadow: 0 0px 2px #e74c3c !important;
-  box-shadow: 0 0px 2px #e74c3c !important;
+  -moz-box-shadow: 0 0px 2px black !important;
+  -webkit-box-shadow: 0 0px 2px black !important;
+  box-shadow: 0 0px 2px black !important;
 }
 form #input-submit {
   color: $grey;
@@ -358,10 +385,18 @@ form textarea {
 }
 
 /*--------------Footer--------------*/
+
+footer{
+  background-color: $turquoise;
+  color: $nav-font-color;
+  height: 115px;
+
+
+}
 .social-media-footer i{
   font-size: $social-media-icon;
-  color: black;
-  padding: 0 5px 0 5px;
+  padding: 30px 5px 15px 5px;
+
 }
 
 .social-media-footer{
@@ -389,14 +424,8 @@ form textarea {
 //  }
 //}
 
-//@include media-breakpoint-up(md) {
-//  html {
-//    font-size: 20px;
-//  }
-//}
-
-//@include media-breakpoint-up(lg) {
-//  html {
-//    font-size: 28px;
-//  }
-//}
+@include media-breakpoint-up(md) {
+ html {
+font-size: 20px;
+ }
+}

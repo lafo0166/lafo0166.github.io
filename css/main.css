@@ -5763,7 +5763,11 @@ body {
 
 /*--------------Testimonials--------------*/
 #testimonials {
-  padding: 30px 20px 0 20px; }
+  padding: 30px 20px 0 20px;
+  background: #8392a7;
+  color: white; }
+  #testimonials h3 {
+    margin-bottom: 30px; }
 
 /*--------------Contact--------------*/
 #contact {
@@ -5904,6 +5908,9 @@ footer {
     padding: 40px 20px 0 20px; }
   .col-md-6 {
     padding: 20px 20px 0 20px; }
+  #testimonials {
+    padding: 60px 20px 0;
+    height: 420px; }
   #contact {
     width: 60%;
     height: 350px;
@@ -5927,9 +5934,12 @@ footer {
     clear: both; } }
 
 @media (min-width: 992px) {
-  #about p {
-    padding: 100px 100px 15px 100px; }
-  #about img {
-    width: 40%;
-    margin: 40px 100px 50px 0;
-    float: left; } }
+  #about {
+    overflow: hidden;
+    height: 100vh; }
+    #about p {
+      padding: 100px 100px 15px 100px; }
+    #about img {
+      width: 40%;
+      margin: 40px 100px 50px 0;
+      float: left; } }

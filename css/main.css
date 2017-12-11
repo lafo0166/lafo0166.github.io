@@ -5,6 +5,7 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url(https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800|Lobster|Lobster+Two:400,400i,700,700i|Oswald:200,300,400,500,600,700);
 @media print {
   *,
   *::before,
@@ -5555,34 +5556,34 @@ a.text-dark:focus, a.text-dark:hover {
 
 /*Typography*/
 h1 {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-weight: 100;
   font-size: 3em; }
 
 h2 {
-  font-family: Lobster;
+  font-family: "Lobster", sans-serif;
   font-size: 1.2em;
   font-weight: 100; }
 
 h3 {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 1.2em;
   text-decoration: overline; }
 
 h4 {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 0.8em;
   letter-spacing: 0.1em; }
 
 p {
-  font-family: assistant;
+  font-family: "Assistant", sans-serif;
   font-weight: 400;
   font-size: 0.9em; }
 
 nav {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-weight: 300;
   text-align: left; }
 
@@ -5744,7 +5745,7 @@ body {
     line-height: 1;
     margin-left: 15px; }
   #certification li {
-    font-family: assistant;
+    font-family: "Assistant", sans-serif;
     font-size: 0.9em;
     text-align: left; }
 
@@ -5796,7 +5797,7 @@ form input, form textarea {
   display: block;
   width: 100%;
   margin-top: 1em;
-  font-family: assistant;
+  font-family: "Assistant", sans-serif;
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);

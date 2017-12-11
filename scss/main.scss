@@ -50,6 +50,7 @@ nav{
   height: $nav-height;
   background: $nav-background;
   position: fixed;
+  z-index: 99;
   top: 0;
   width: 100%;
 }
@@ -213,6 +214,7 @@ nav {
 
 
 /*Mobile Screen*/
+@include media-breakpoint-up(xs) {
 html{
   background: white;
 }
@@ -222,8 +224,6 @@ body{
     width: 100%;
     text-align: $mobile-align;
     }
-
-
 
 /*----------Home--------*/
 #header {
@@ -244,21 +244,16 @@ background-image: $header-background-mobile;
   padding: 70px 25px 0 25px;
   /*border: 1px solid black;*/
   line-height: 1.5;
+  img{width: 100%; margin: 20px 0 20px 0}
 }
 /*------------Education----------*/
-.certification-intro{
-//height: 300px;
-overflow: hidden;
-}
-.certification-intro img{
-width: 100%;
 
-}
+
 
 #certification{
-  padding-top: 70px;
-h3{margin-bottom: 35px;}
-  ul{ padding: 15px 25px 0 25px;
+  padding-top: 40px;
+  ul{ padding: 15px 25px 0 25px; line-height: 1;
+
   margin-left: 15px; }
 
   li{
@@ -272,25 +267,21 @@ h3{margin-bottom: 35px;}
 .services-intro img{
   width: 100%;  }
 
+  .services-intro{
+      background-size: cover;
+      overflow: hidden;}
+        }
+
 #services {
   padding: 40px 20px 0 20px;
   img{margin-bottom: 15px}
-
-  .services-intro{
-      background-size: cover;
-      //height: 300px;
-      overflow: hidden;}
-        }
-    /*border: 1px solid black;*/
-
 }
 
 /*--------------Testimonials--------------*/
 
 #testimonials{
 padding: 30px 20px 0 20px;
-  border: 1px solid black;
-    }
+  }
 
 
 
@@ -313,7 +304,7 @@ form {
   margin: 20px auto;
 }
 form input, form textarea {
-  border: 0;
+  border:  1px solid #F0F0F0;
   outline: 0;
   padding: 1em;
   font-size: $paragraph-size;
@@ -390,6 +381,7 @@ footer{
   background-color: $turquoise;
   color: $nav-font-color;
   height: 115px;
+  width: 100%;
 
 
 }
@@ -413,19 +405,47 @@ footer{
 //  padding: 2rem 0;
 //}
 
-// Responsive typography sizes using Bootstrap mixins for the media querries
-//html {
-//  font-size: 14px;
-//}
-
-//@include media-breakpoint-up(sm) {
-//  html {
-//    font-size: 16px;
-//  }
-//}
+//Responsive typography sizes using Bootstrap mixins for the media querries
+@include media-breakpoint-up(sm) {
+  #about{
+    img{ width: 80%; }
+    p{padding: 30px}
+  }
+  #certification{padding-top: 10px; margin-left: 30px}
+  .services-intro {height:250px; overflow: hidden;}
+  .col-md-4{padding: 0px 60px 0 60px;}
+  .col-md-6{padding: 0px 60px 0 60px;}
+}
 
 @include media-breakpoint-up(md) {
- html {
-font-size: 20px;
- }
+//div{border: 1px solid black}
+h3{font-size: 1.5em; padding-bottom: 10px;}
+#about{
+  height: 100vh;
+  padding: 60px 50px 50px;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+    h3{text-indent:30px; padding-bottom: 0}
+    img{width:50%; margin: 40px 50px 50px 0; float: left;}
+    p{padding-top: 32px}
+    }
+#services{margin: 30px; clear:both;}
+.col-md-4{padding: 40px 20px 0 20px;}
+.col-md-6{padding: 20px 20px 0 20px;}
+#contact{width:60%; height: 350px;  float: left;
+h3{font-size: 1.3em; padding-bottom: 5px; padding-top: 15px;}}
+#map{width:40%; float: left;}
+#certification{padding-top:0px; margin-bottom: 0px;
+  h3{font-size: 1em; margin-top: 30px;}
+}
+.services-intro{clear:both;}
+footer{clear:both;}
+}
+
+@include media-breakpoint-up(lg) {
+  #about{
+    p{padding: 100px 100px 15px 100px;}
+    img{ width:40%; margin: 40px 100px 50px 0; float: left;}
+  }
 }

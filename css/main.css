@@ -5902,8 +5902,10 @@ footer {
     #about p {
       padding-top: 32px; }
   #services {
-    margin: 30px;
-    clear: both; }
+    margin-top: 30px;
+    clear: both;
+    background: aliceblue;
+    width: 100%; }
   .col-md-4 {
     padding: 40px 20px 0 20px; }
   .col-md-6 {

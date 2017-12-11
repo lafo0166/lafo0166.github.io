@@ -5561,7 +5561,7 @@ h1 {
   font-size: 3em; }
 
 h2 {
-  font-family: "Lobster", sans-serif;
+  font-family: "Lobster Two", cursive;
   font-size: 1.2em;
   font-weight: 100; }
 
@@ -5884,11 +5884,16 @@ footer {
     padding: 0px 60px 0 60px; } }
 
 @media (min-width: 768px) {
+  h1 {
+    font-size: 4em; }
+  h2 {
+    font-size: 1.5em; }
   h3 {
     font-size: 1.5em;
     padding-bottom: 10px; }
   #about {
     height: 100vh;
+    overflow: hidden;
     padding: 60px 50px 50px;
     line-height: 1.5;
     text-align: left;

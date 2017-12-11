@@ -422,9 +422,12 @@ footer{
 
 @include media-breakpoint-up(md) {
 //div{border: 1px solid black}
+h1{font-size: 4em}
+h2{font-size: 1.5em}
 h3{font-size: 1.5em; padding-bottom: 10px;}
 #about{
   height: 100vh;
+  overflow: hidden;
   padding: 60px 50px 50px;
     line-height: 1.5;
     text-align: left;

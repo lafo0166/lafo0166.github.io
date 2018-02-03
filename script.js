@@ -23,5 +23,21 @@
     $('#nav-toggle').on('click', function() {
       this.classList.toggle('active');
     });
-  }); // end DOM ready
+
+
+
+//SCROLL FEATURE
+
+
+$("a[href^='#']").click(function(e) {
+	e.preventDefault();
+
+	var position = $($(this).attr("href")).offset().top;
+
+	$("body, html").animate({
+		scrollTop: position
+	} /* speed */ );
+});
+
+}); // end DOM ready
 })(jQuery); // end jQuery

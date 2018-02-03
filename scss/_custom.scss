@@ -7,25 +7,25 @@ $body-bg: $off-white;
 
 //Typography Weight
 
-$font-weight-light:	100;
+$font-weight-light:	200;
 $font-weight-regular:	300;
 $font-weight-bold:	400;
 
 //Typography Font-Family
 
-$nav-font: Oswald;
-$header-font: Oswald;
-$sub-header-font: Lobster;
-$section-title-font: Oswald;
-$sub-section-title-font: Assistant;
-$paragraph-font: assistant;
+$nav-font: 'Oswald', sans-serif;
+$header-font: 'Oswald', sans-serif;
+$sub-header-font: 'Lobster Two', cursive;
+$section-title-font: 'Oswald', sans-serif;
+$sub-section-title-font: 'Assistant', sans-serif;
+$paragraph-font: 'Assistant', sans-serif;
 
 //Typography Font-Size
-$header-size: 3em;
+$header-size: 4em;
 $sub-header-size: 1.2em;
-$section-title-size: 1.2em;
-$sub-section-title-size: 0.8em;
-$paragraph-size: 0.9em;
+$section-title-size: 1.5em;
+$sub-section-title-size: 1.1em;
+$paragraph-size: 1em;
 $social-media-icon: 1.2em;
 $sub-header-size-desktop:1.5em;
 
@@ -57,6 +57,7 @@ $navy-blue: #090D33;
 $turquoise: #6DC5C6;
 $light-turquoise: #87CFD0;
 $yellow: #F7DF47;
-$light-yellow: #F7E157;
+$light-yellow: #FFE18A;
 $grey: #5C5C5C;
 $off-grey: #F0F0F0;
+$darkgrey: #242828;

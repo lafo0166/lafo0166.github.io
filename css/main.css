@@ -5475,7 +5475,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   text-transform: capitalize !important; }
 
 .font-weight-light {
-  font-weight: 100 !important; }
+  font-weight: 200 !important; }
 
 .font-weight-normal {
   font-weight: normal !important; }
@@ -5555,35 +5555,38 @@ a.text-dark:focus, a.text-dark:hover {
 
 /*Typography*/
 h1 {
-  font-family: Oswald;
-  font-weight: 100;
-  font-size: 3em; }
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  font-size: 4em;
+  letter-spacing: 1px;
+  padding-bottom: 10px; }
 
 h2 {
-  font-family: Lobster;
-  font-size: 1.2em;
-  font-weight: 100; }
+  font-family: "Lobster Two", cursive;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  font-weight: 200; }
 
 h3 {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-decoration: overline; }
 
 h4 {
-  font-family: Oswald;
-  font-weight: 400;
-  font-size: 0.8em;
-  letter-spacing: 0.1em; }
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+  letter-spacing: 1px; }
 
 p {
-  font-family: assistant;
+  font-family: "Assistant", sans-serif;
   font-weight: 400;
-  font-size: 0.9em; }
+  font-size: 1em; }
 
 nav {
-  font-family: Oswald;
-  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
   text-align: left; }
 
 .navigation {
@@ -5599,10 +5602,11 @@ nav {
 
 .social-media-nav {
   position: absolute;
-  padding-left: 20px;
+  padding-left: 60px;
   float: left;
   line-height: 70px;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  left: 0; }
   .social-media-nav a,
   .social-media-nav a:visited {
     color: white;
@@ -5629,7 +5633,8 @@ nav {
         line-height: 70px;
         background: #6DC5C6;
         color: white;
-        text-decoration: none; }
+        text-decoration: none;
+        letter-spacing: 1.5px; }
         nav ul li a:not(:only-child):after,
         nav ul li a:visited:not(:only-child):after {
           padding-left: 7px;
@@ -5713,7 +5718,7 @@ html {
   background: white; }
 
 body {
-  margin: 0 0 0 0;
+  margin: auto;
   width: 100%;
   text-align: center; }
 
@@ -5744,34 +5749,51 @@ body {
     line-height: 1;
     margin-left: 15px; }
   #certification li {
-    font-family: assistant;
-    font-size: 0.9em;
-    text-align: left; }
+    font-family: "Assistant", sans-serif;
+    font-size: 1em;
+    text-align: left;
+    line-height: 30px; }
 
 /*--------------Services--------------*/
 .services-intro img {
   width: 100%; }
 
 .services-intro {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   background-size: cover;
   overflow: hidden; }
 
 #services {
-  padding: 40px 20px 0 20px; }
+  background-color: white; }
   #services img {
     margin-bottom: 15px; }
 
+.service {
+  padding: 15px;
+  margin: 5px 15px;
+  background: white;
+  color: #242828;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+
 /*--------------Testimonials--------------*/
 #testimonials {
-  padding: 30px 20px 0 20px;
-  background: #8392a7;
-  color: white; }
+  padding: 60px 20px 30px 20px;
+  background: #BBD1D0;
+  color: #242828; }
   #testimonials h3 {
     margin-bottom: 30px; }
 
+.test {
+  padding: 15px;
+  margin: 5px 15px;
+  background: white;
+  color: #242828;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+
 /*--------------Contact--------------*/
 #contact {
-  margin-top: 40px; }
+  margin-top: 40px;
+  padding: 0 20px; }
 
 *,
 *:before,
@@ -5789,14 +5811,14 @@ form input, form textarea {
   border: 1px solid #F0F0F0;
   outline: 0;
   padding: 1em;
-  font-size: 0.9em;
+  font-size: 1em;
   /*-moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;*/
   display: block;
   width: 100%;
   margin-top: 1em;
-  font-family: assistant;
+  font-family: "Assistant", sans-serif;
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -5849,6 +5871,9 @@ form textarea {
 
 .cf:after {
   clear: both; }
+
+#map {
+  padding: 0 20px 15px 20px; }
 
 /*--------------Footer--------------*/
 footer {
@@ -5910,7 +5935,8 @@ footer {
     padding: 20px 20px 0 20px; }
   #testimonials {
     padding: 60px 20px 0;
-    height: 420px; }
+    height: 520px;
+    align-items: center; }
   #contact {
     width: 60%;
     height: 350px;
@@ -5921,7 +5947,9 @@ footer {
       padding-top: 15px; }
   #map {
     width: 40%;
-    float: left; }
+    float: left;
+    margin: auto;
+    padding: 20px; }
   #certification {
     padding-top: 0px;
     margin-bottom: 0px; }

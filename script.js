@@ -38,6 +38,15 @@ $("a[href^='#']").click(function(e) {
 		scrollTop: position
 	} /* speed */ );
 });
-
 }); // end DOM ready
+
+//SCROLL FEATURE
+
+// $(function(){
+//     // Find selected div
+//     var selected = $('#container .selected');
+//     // Scroll container to offset of the selected div
+//     selected.parent().parent().scrollTop(selected[0].offsetTop - 45 );
+// });// end DOM ready
+
 })(jQuery); // end jQuery

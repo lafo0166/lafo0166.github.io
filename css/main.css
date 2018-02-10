@@ -5769,11 +5769,9 @@ body {
     margin-bottom: 15px; }
 
 .service {
-  padding: 15px;
-  margin: 5px 15px;
+  padding: 25px;
   background: white;
-  color: #242828;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+  color: #242828; }
 
 /*--------------Testimonials--------------*/
 #testimonials {
@@ -5785,10 +5783,9 @@ body {
 
 .test {
   padding: 15px;
-  margin: 5px 15px;
   background: white;
   color: #242828;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+  box-shadow: 0 1px 4px; }
 
 /*--------------Contact--------------*/
 #contact {
